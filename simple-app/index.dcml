@@ -17,33 +17,41 @@ def contactUs():
   </script>
   <template>
 
-    <form onSubmit="contactUs()">
-      <h3>Contact us</h3>
-      <div class="row">
-        <div class="col-12 col-md-4 mb-2">
-          <label>Full Name*</label>
-          <input class="form-control" binding="$.fullName" onInput="onChange()" required="true" />
-        </div>
-        <div class="col-12 col-md-4 mb-2">
-          <label>E-mail Address*</label>
-          <input class="form-control" binding="$.email" onInput="onChange()" required="true" />
-        </div>
-        <div class="col-12 col-md-4 mb-2">
-          <label>Phone</label>
-          <input type="tel" class="form-control" binding="$.phone" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <label>Message</label>
-          <textarea class="form-control" rows="5" onInput="onChange()" binding="$.message" required="true" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col ml-auto">
-          <button class="btn btn-primary" id="submitBtn" disabled="false" type="submit">SEND MESSAGE</button>
-        </div>
-      </div>
-    </form>
+
+		<div class="h-100 overflow-auto d-flex flex-column">
+			<div class="container my-2 p-2 h-100 w-100 bg-main overflow-auto">
+
+        <form onSubmit="contactUs()">
+          <h3>Contact us</h3>
+          <div class="row">
+            <div class="col-12 col-md-4 mb-2">
+              <label>Full Name*</label>
+              <input class="form-control" binding="$.fullName" onInput="onChange()" required="true" />
+            </div>
+            <div class="col-12 col-md-4 mb-2">
+              <label>E-mail Address*</label>
+              <input class="form-control" binding="$.email" onInput="onChange()" required="true" />
+            </div>
+            <div class="col-12 col-md-4 mb-2">
+              <label>Phone</label>
+              <input type="tel" class="form-control" binding="$.phone" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label>Message</label>
+              <textarea class="form-control" rows="5" onInput="onChange()" binding="$.message" required="true" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ml-auto">
+              <button class="btn btn-primary" id="submitBtn" disabled="false" type="submit">SEND MESSAGE</button>
+            </div>
+          </div>
+        </form>
+
+			</div>
+		</div>
+
   </template>
 </dcml>
