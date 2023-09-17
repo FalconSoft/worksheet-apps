@@ -4,12 +4,7 @@
 # Evaluated with JSPython https://jspython.dev/
 
 def onChange():
-  btn = getComponentById(rootUIModel, "submitBtn")
-
-  if dataModel.fullName == null or dataModel.email == null or dataModel.message == null:
-    btn.disabled = true
-  else:
-    btn.disabled = null
+  print('on Change')
 
 def contactUs():
   alert(JSON.stringify(dataModel))
