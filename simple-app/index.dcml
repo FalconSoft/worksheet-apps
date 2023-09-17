@@ -15,11 +15,13 @@ def contactUs():
   alert(JSON.stringify(dataModel))
 
 async def onTestLoadData():
+  print('onTestLoadData ...', dateTime().toString())
   data = httpGet("https://restcountries.com/v3.1/region/eu")
   dataContext.message = JSON.stringify(data)
 
 def onTestClick():
   print('test 111 ')
+  dataContext.message = dateTime().toString()
 
 
   </script>
