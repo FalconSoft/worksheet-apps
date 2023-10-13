@@ -95,11 +95,11 @@ async def onEndDateChanged(date):
 
 def togglePeriodBtnClass(act):
   for btnId in ["allBtn", "yearBtn", "3mBtn", "6mBtn"]:
-    getComponentById(rootUIModel, btnId)
+    getComponentById(btnId)
       .element
       .classList.remove("active")
 
-  getComponentById(rootUIModel, act)
+  getComponentById(act)
     .element
     .classList.add("active")
 
