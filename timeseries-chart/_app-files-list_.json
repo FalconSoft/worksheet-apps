@@ -3,6 +3,7 @@
     "home!index.dcml", 
     "home!index.jspy", 
     "symbol-selector!index.dcml", 
-    "symbol-selector!index.jspy"
+    "symbol-selector!index.jspy",
+	"alphavantage-lib.jspy"
   ]
 }
