@@ -1,0 +1,19 @@
+nums = [1, 2, 3, 4, 5]
+
+""" All standard JavaScript functions work here """
+
+nums.push(6)
+nums.push(nums.pop() + 10)
+
+
+y = nums.map((r, i) =>
+        newItem = {
+            element: r,
+            index: i,
+            square: Math.pow(i, 2),
+            cube: Math.pow(i, 3)
+        }
+        return newItem
+    )
+    .filter(r => r.cube > 5)
+return y

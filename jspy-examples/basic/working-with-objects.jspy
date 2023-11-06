@@ -1,0 +1,18 @@
+# create object
+x = {}
+x.someProp = 55
+x1 = {prop: x}
+dateObj = {
+  currentYear: dateTime().getFullYear(),
+  currentMonth: dateTime().getMonth() + 1,
+  currentDate: dateTime().getDate(),
+  currentTime: dateTime()
+}
+
+# JavaScript Object works here very well
+x1.allKeys = Object.keys(dateObj)
+
+x1["dynamicObject_" + dateTime().getMinutes()] = "This is dynamic object"
+
+# merges two objects
+Object.assign(dateObj, x1)

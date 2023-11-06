@@ -1,0 +1,24 @@
+<dcml>
+<!-- script src="path-to-file.jspy"></script -->
+<!-- <layout src="main-layout.dcml"></layout -->
+<template>
+  <div class="w-100 h-100 overflow-auto d-flex flex-column">
+    <app-header>
+      <!--
+      <menu-items>
+        <menu label='Page 1' icon='fa fa-icon' click='onPage1()'/>
+        <menu label='Page 2' icon='fa fa-icon' click='onPage2()'/>
+      </menu-items>
+      -->
+    </app-header>
+
+    <div class="container my-2 h-100 bg-main overflow-auto">
+      <welcome />
+      <!--
+      <page-placeholder></page-placeholder>
+      -->
+    </div>
+    <app-footer />
+  </div>
+</template>
+</dcml>

@@ -1,0 +1,12 @@
+{
+	"files": [
+		"basic!functions.jspy",
+		"basic!loops.jspy",
+		"basic!null-conditioning.jspy",
+		"basic!working-with-arrays.jspy",
+		"basic!working-with-objects.jspy",
+		"http-calls!http-calls.jspy",
+		"http-calls!parallel-api-calls.jspy",
+		"index.dcml"
+	]
+}

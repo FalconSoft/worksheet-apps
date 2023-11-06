@@ -1,0 +1,7 @@
+
+
+myObj = {}
+
+# this feature is not available in a classic Python,
+# but it is very usefull and popular with other languages
+myObj?.property?.subProperty or "N/A"

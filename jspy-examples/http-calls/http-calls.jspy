@@ -1,0 +1,26 @@
+from 'rxjs' import lastValueFrom
+
+async def simpleHttpGet():
+  return httpGet("https://restcountries.com/v3.1/region/eu")
+
+async def simpleFetch():
+  return {
+    objectValue: fetch("https://restcountries.com/v3.1/region/eu").json(),
+    text: fetch("https://raw.githubusercontent.com/FalconSoft/sample-data/master/CSV/sample-testing-data-100.csv").text()
+  }  
+
+async def simpleHttpRequest$():
+  lastValueFrom(httpRequest$("GET", "https://restcountries.com/v3.1/region/eu"))
+
+async def simpleHttpRequest():
+  httpRequest("GET", "https://restcountries.com/v3.1/region/eu")
+
+
+#similarly you can do POST, PUT, DELETE
+# sendData = {name: "John"}
+# httpPost("url/to/post/data", sendData)
+
+# httpDelete("url/to/delete/data")
+
+# updateData = {id: 1, name: "John"}
+# httpPut("url/to/update/data", updateData)

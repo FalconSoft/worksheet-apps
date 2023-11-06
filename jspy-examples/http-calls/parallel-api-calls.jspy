@@ -1,0 +1,14 @@
+from 'rxjs' import forkJoin, lastValueFrom, map
+
+ids = [2, 7, 4, 9, 5]
+
+# use function map to transform an array of ids into an array of observables
+# then use observable's pipe(map(...)) and transform result, by adding a requestId and response
+httpRequests$ = ids
+	.map(requestId => httpRequest$("GET", "https://jsonplaceholder.typicode.com/posts/" + requestId)
+											.pipe(map(r=>{requestId, response: r.data}))
+	)
+
+# forkJoin all observables and convert it into promise
+# Please remember: all Promises are resolved inside JSPython
+return lastValueFrom(forkJoin(httpRequests$))

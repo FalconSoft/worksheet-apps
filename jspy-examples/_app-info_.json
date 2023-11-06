@@ -1,0 +1,13 @@
+{
+	"appId": 17,
+	"appOwner": "Pavlo",
+	"appName": "jspy-examples",
+	"title": "JSPY Examples",
+	"logo": null,
+	"homePage": "index.dcml",
+	"description": "A collection of JSPY Examples ",
+	"accessLevel": 3,
+	"codeAccessLevel": 4,
+	"publicAccess": 0,
+	"publicCodeAccess": 0
+}

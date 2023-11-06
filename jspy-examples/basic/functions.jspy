@@ -1,0 +1,46 @@
+def add(a, b):
+  return a + b
+"""
+It is optional to specify 'return'
+If no return specified, then it will return last statement
+"""
+def minus(a, b):
+  a - b
+
+nums = range(20)
+
+"""
+Here is example of multi line and single line arrow functions
+"""
+y = nums
+  .map((r, i) =>
+    newItem = {
+        element: r,
+        index: i,
+        square: Math.pow(i, 2),
+        cube: Math.pow(i, 3)
+    }
+    return newItem
+  )
+  .filter(r => r.cube > 5)
+
+"""
+Recursive function usage
+"""
+
+def power(base, exponent):
+  if exponent == 0:
+    return 1
+  else:
+    return base * power(base, exponent - 1)
+
+"5 ** 10 = " + power(5, 10) + " == " + Math.pow(5, 10)
+
+# returns object what has two values
+{
+  name: "Examples",
+  add: add(2, 3),
+  substract: minus(10, 5),
+  arrowFunc: y,
+  recursiveFunc: "5 ** 10 = " + power(5, 10) + " == " + Math.pow(5, 10)
+}
