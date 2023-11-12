@@ -1,7 +1,7 @@
 {
   "title": "Northwind App",
   "homePage": "home",
-  "description": "Long Description for an Northwind App",
+  "description": "Northwind App, built on the Worksheet Systems Low-Code Platform and featuring the classic Northwind database created by Microsoft.",
   "publicAccess": 1,
   "publicCodeAccess": 1
 }
