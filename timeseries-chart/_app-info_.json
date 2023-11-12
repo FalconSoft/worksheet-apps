@@ -1,7 +1,7 @@
 {
   "title": "Timeseries Chart",
   "homePage": "home",
-  "description": "Stock data from alphavantage.com",
+  "description": "Stock data from https://alphavantage.com. Built on the Worksheet Systems Low-Code Platform.",
   "publicAccess": 1,
   "publicCodeAccess": 1
 }
